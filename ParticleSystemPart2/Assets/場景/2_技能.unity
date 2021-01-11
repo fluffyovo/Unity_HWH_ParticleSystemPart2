@@ -393,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166340541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.21, y: 1.446, z: -1.33}
+  m_LocalPosition: {x: -1.75, y: 1.446, z: -0.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -416,10 +416,55 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.56078434
       objectReference: {fileID: 0}
+    - target: {fileID: 8456991061539358783, guid: 0a50d2b16e52a10449fbcefb11ca2688,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456991061835458136, guid: 0a50d2b16e52a10449fbcefb11ca2688,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456991061835458136, guid: 0a50d2b16e52a10449fbcefb11ca2688,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456991061835458136, guid: 0a50d2b16e52a10449fbcefb11ca2688,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.8196079
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456991061835458136, guid: 0a50d2b16e52a10449fbcefb11ca2688,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.98823535
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456991061835458136, guid: 0a50d2b16e52a10449fbcefb11ca2688,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.9843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456991061835458136, guid: 0a50d2b16e52a10449fbcefb11ca2688,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456991062035498996, guid: 0a50d2b16e52a10449fbcefb11ca2688,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.minScalar
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456991062035498996, guid: 0a50d2b16e52a10449fbcefb11ca2688,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8456991062035498999, guid: 0a50d2b16e52a10449fbcefb11ca2688,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8456991062626000361, guid: 0a50d2b16e52a10449fbcefb11ca2688,
         type: 3}
@@ -770,7 +815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9056604, g: 0.8700666, b: 0.7048772, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5727,7 +5772,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622809252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.508, y: 1.471, z: -1.33}
+  m_LocalPosition: {x: 1.6, y: 1.471, z: 0.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5783,7 +5828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.8018868, g: 0.5177047, b: 0.36690104, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5792,7 +5837,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: d43308097315797458eb912de9291338, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 68
@@ -20535,8 +20580,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2.5
-      minScalar: 2
+      scalar: 2
+      minScalar: 1.7
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -20641,7 +20686,7 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 0.8304843, b: 0.41176474, a: 0.7647059}
+      minColor: {r: 0.9811321, g: 0.8789771, b: 0.6247775, a: 0.7647059}
       maxColor: {r: 0.9622642, g: 0.35146558, b: 0.24964403, a: 0.8235294}
       maxGradient:
         serializedVersion: 2
@@ -20704,8 +20749,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.4
-      minScalar: 0.2
+      scalar: 0.3
+      minScalar: 0.15
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -21285,8 +21330,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 500
-      minScalar: 200
+      scalar: 800
+      minScalar: 400
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -30131,7 +30176,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8679245, g: 0.40810305, b: 0.020469915, a: 1}
+  m_Color: {r: 0.754717, g: 0.58487386, b: 0.34531865, a: 1}
   m_Intensity: 1.5
   m_Range: 20
   m_SpotAngle: 30
@@ -30189,7 +30234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750609193}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.68, y: 3.09, z: -9.39}
+  m_LocalPosition: {x: -0.91, y: 4.29, z: -8.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
